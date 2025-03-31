@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie du Nord</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add a fallback style to help debug -->
+    <style>
+        /* Basic fallback styles */
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        .logo-design {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: #d4af37;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: transparent;
+            border: 2px solid #d4af37;
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <div class="logo-design"></div>
+                <div>Galerie <span>du Nord</span></div>
+            </div>
+            <button class="mobile-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#artists">Artists</a></li>
+                <li><a href="#exhibitions">Exhibitions</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Quebec Art Deco</h1>
+            <p>Discover the elegance and sophistication of Quebec Art Deco, a unique fusion of European tradition and North American influences.</p>
+            <a href="#gallery" class="btn">Explore the Collection</a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
